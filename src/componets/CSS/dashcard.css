@@ -1,0 +1,27 @@
+.dashcard{
+   
+    width: 400px;
+    background-color: #4072be;
+    border-radius: 10px;
+    padding: 20px;
+    
+    gap: 10px;
+
+}
+.dashcard li{
+    margin-top: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border-radius: 6px;
+}
+.dashcard li:last-child{
+    background-color: #4072be;
+    color: white;
+}
+.dashboardusr{
+    
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

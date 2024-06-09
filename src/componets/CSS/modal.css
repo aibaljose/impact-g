@@ -1,0 +1,14 @@
+.modal{
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    margin-top: 24px;
+    right: 140px;
+   
+   
+    
+   
+  
+    border-radius: 12px;
+    background-color: #ff080800;
+}
