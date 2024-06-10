@@ -1,8 +1,10 @@
 .dashcard{
    
-    width: 400px;
-    background-color: #4072be;
-    border-radius: 10px;
+    width: 320px;
+    /* background-color: #b1b2b3; */
+    background:#4FD1C5;
+    background-size: cover;
+    border-radius: 15px;
     padding: 20px;
     
     gap: 10px;
@@ -10,18 +12,22 @@
 }
 .dashcard li{
     margin-top: 10px;
-    padding: 20px;
-    color: rgb(0, 0, 0);
-    background-color: #fff;
-    border-radius: 6px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #ffffff00;
+    border-radius: 25px;
 }
 .dashcard li:last-child{
-    background-color: #4072be;
-    color: white;
+    background-color: #70d3ce;
+    color: rgb(255, 255, 255);
 }
 .dashboardusr{
     
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
 }

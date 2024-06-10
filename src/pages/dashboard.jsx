@@ -4,6 +4,7 @@ import { db, auth } from '../firebase'; // Import the Firebase database module
 import { ref, set, push, update, get } from 'firebase/database';
 import Dashcard  from '../componets/dashcard';
 import "../componets/CSS/dashcard.css"
+import Winner from "../componets/winner"
 
 
 const dashboard = () => {
@@ -52,6 +53,7 @@ const dashboard = () => {
                     );
                 })}
             </ul>
+
         </div>
     );
 };

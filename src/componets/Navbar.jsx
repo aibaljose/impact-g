@@ -23,10 +23,10 @@ const change= ()=>{
                     <li><Link to="/" style={{ textDecoration: "none" }} >Home</Link></li>
                     <li>Challenges</li>
                     
-                        <li><Link to="/dashboard" style={{ textDecoration: "none" }} >Dashbord</Link></li>
+                        <li><Link to="/winnerdash" style={{ textDecoration: "none" }} >Dashboard</Link></li>
                     
 
-                    <li>About us</li>
+                    <li><Link to="/dashboard" style={{ textDecoration: "none" }} >Admin</Link></li>
                 </ul>
                 
                 {loggedIn || (

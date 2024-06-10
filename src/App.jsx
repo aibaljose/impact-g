@@ -7,8 +7,10 @@ import Dashboard from "./pages/dashboard"
 import React, { useState } from 'react';
 import Signup from './componets/signup';
 import Login from './componets/login';
+import Winnerdash from "./pages/winnerdash"
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { auth } from './firebase';
+import winnerdash from "./pages/winnerdash"
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(true); // State variable to track authentication state
@@ -34,6 +36,7 @@ const App = () => {
         <Route path="/data" Component={Page} />
         <Route path="/login" Component={Login} />
         <Route path="/dashboard" Component={Dashboard} />
+        <Route path="/winnerdash" Component={winnerdash} />
         <Route path="/signup" element={<Signup  />  } />
    
       </Routes>
