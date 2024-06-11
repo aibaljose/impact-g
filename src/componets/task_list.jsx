@@ -15,13 +15,13 @@ const task_list = () => {
     
 <div className="header">
 <div className="text">
-  <h2>A game To learn Skills with <br></br>  challeges <span> powered by impact</span></h2>
+  <h2>A game To learn Skills with <br></br>  challenges <span> powered by impact</span></h2>
   <p>Welcome to SkillQuest, the ultimate game designed to help you learn and master new skills through engaging and impactful challenges.<br></br> Whether you're looking to enhance your coding abilities, develop your artistic talents, or improve your problem-solving techniques.</p>
 </div>
 
 <div className="container">
 <Link to="/git" >
-<Task name="git" no ="git & github" dis="Challange 1" />
+<Task name="git" no ="git & github" dis="Challenge 1" />
 </Link>
 
 <Task name="React" no ="0" dis="Challenge 2"/>
