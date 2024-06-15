@@ -1,10 +1,10 @@
 import "../pages/gitabout.css"
 
 import React, { useState,useEffect } from 'react';
-import { db, auth } from '../firebase'; // Import the Firebase database module
+import { db, auth } from '../firebase'; 
 import { ref, set, push, update } from 'firebase/database';
 const gitabout = () => {
-  // Create a reference to the database path
+
 
 
 
@@ -20,10 +20,10 @@ const gitabout = () => {
     if (tick) {
       timer = setTimeout(() => {
         settick(false);
-      }, 3000); // 5000 milliseconds = 5 seconds
-    }// 5000 milliseconds = 5 seconds
+      }, 3000); 
+    }
 
-    // Cleanup the timer when the component unmounts
+   
     return () => clearTimeout(timer);
   }, [tick]);
 
@@ -61,12 +61,11 @@ const gitabout = () => {
     event.preventDefault();
     const user = auth.currentUser;
     const uid = user.uid;
-    const databasePath = `users/${uid}/data2`; // Create a path based on the UID
+    const databasePath = `users/${uid}/data2`; 
     const databaseRef = ref(db, databasePath);
     set(databaseRef, { "challege2": inputValue2 });
     settick(true)
-    // You can perform any further action with the input value
-    // For example, you can send it to the server or update the state
+   
   };
 
 
@@ -74,38 +73,35 @@ const gitabout = () => {
     event.preventDefault();
     const user = auth.currentUser;
     const uid = user.uid;
-    const databasePath = `users/${uid}/data3`; // Create a path based on the UID
+    const databasePath = `users/${uid}/data3`; 
     const databaseRef = ref(db, databasePath);
     set(databaseRef, { "challege3": inputValue3 });
     settick(true)
-    // You can perform any further action with the input value
-    // For example, you can send it to the server or update the state
+    
   };
 
   const handleSubmit4 = (event) => {
     event.preventDefault();
     const user = auth.currentUser;
     const uid = user.uid;
-    const databasePath = `users/${uid}/data4`; // Create a path based on the UID
+    const databasePath = `users/${uid}/data4`;
     const databaseRef = ref(db, databasePath);
     set(databaseRef, { "challege4": inputValue4 });
     settick(true)
-    // You can perform any further action with the input value
-    // For example, you can send it to the server or update the state
+    
   };
 
   const handleSubmit5 = (event) => {
     event.preventDefault();
     const user = auth.currentUser;
     const uid = user.uid;
-    const databasePath = `users/${uid}/data5`; // Create a path based on the UID
+    const databasePath = `users/${uid}/data5`; 
     const databaseRef = ref(db, databasePath);
     set(databaseRef, { "challege5": inputValue5 });
        console.log('Input value:', inputValue5);
        alert("Submitted")
        settick(true)
-    // You can perform any further action with the input value
-    // For example, you can send it to the server or update the state
+   
   };
 
   return (
