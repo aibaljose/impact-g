@@ -43,7 +43,7 @@ const winner = ({ rank, name, score }) => {
               fill="#FFF2A0"
             ></path>
           </svg>
-          <p className="ranking_number">{rank}<span className="ranking_word">st</span></p>
+          <p className="ranking_number">{rank}<span className="ranking_word"></span></p>
           <div className="splitLine"></div>
           <svg
             className="icon userAvatar"

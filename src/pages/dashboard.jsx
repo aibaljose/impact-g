@@ -9,6 +9,7 @@ import Winner from "../componets/winner"
 
 const dashboard = () => {
     const [usersData, setUsersData] = useState("");
+    const [error, setError] = useState('');
     const fetchAllUsers = async () => {
         try {
             const usersRef = ref(db, 'users');
@@ -21,6 +22,8 @@ const dashboard = () => {
             }
         } catch (error) {
             console.error('Error fetching data:', error);
+            setError("Please Login To access the data"); 
+
             return null;
         }
     };
@@ -33,22 +36,33 @@ const dashboard = () => {
         getUsersData();
     }, []);
 
+
+
+  if (error) {
+    return <div style={{ color: 'red' }}>{error}</div>;
+  }
+
     return (
         <div className="dashboardusr">
             <ul className='dashboardusr' >
                 {Object.keys(usersData).map((userId) => {
                     const user = usersData[userId];
+                   
+                    
+                    const usernamedata ={...user.name}
                     const aggregatedData = {
                         ...user.data1,
                         ...user.data2,
                         ...user.data3,
                         ...user.data4,
                         ...user.data5,
-                        ...user.name
+                        ...user.data6,
+                        ...user.data7
+                        
                     };
                     return (
                         <li key={userId}>
-                            <Dashcard userId={userId} data={aggregatedData} />
+                            <Dashcard userId={userId} data={aggregatedData} name={usernamedata} />
                         </li>
                     );
                 })}

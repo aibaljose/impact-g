@@ -24,7 +24,11 @@ const task_list = () => {
 <Task name="git" no ="git & github" dis="Challenge 1" />
 </Link>
 
-<Task name="React" no ="0" dis="Challenge 2"/>
+<Link to="/js" >
+<Task name="javascript" no ="Advanced JS" dis="Challenge 2"/>
+</Link>
+
+
 <Task name="soon" no ="0" dis="Challenge 3"/>
 <Task name="soon" no ="0" dis="Challenge 4"/>
 <Task name="soon" no ="0" dis="Challenge 5"/>
