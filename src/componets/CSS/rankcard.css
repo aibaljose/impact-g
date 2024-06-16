@@ -1,0 +1,71 @@
+
+
+.rankcard{
+    height: 200px;
+    width: 380px;
+     border-radius: 12px;
+     /* background-color: #2d2d2c; */
+     background: linear-gradient(45deg, #fbf3de, #ffdd87);
+     /* background: linear-gradient(25deg,#d64c7f,#ee4758 50%); */
+
+    color: #715210;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.roundtag{
+    height: 104px;
+    width: 104px;
+
+    border: 2px solid rgb(18, 106, 154);
+    border-radius: 50px;
+}
+.profileicon{
+    display: flex;flex-direction: column;
+    gap: 10px;
+    justify-content: center;align-items: center;
+    text-align: center;
+}
+.profileicon img{
+border-radius: 50px;
+height: 100px;
+width: 100px;
+}
+.profileicon h3{
+ font-size: 22px;
+}
+.testcover{
+    width: 200px;
+    display: flex;
+    
+    justify-content: space-around;align-items: center;text-align: center;
+    
+}
+.text1{
+    margin: 10px;
+}
+.text1 h3{
+    font-size: 18px;
+   
+}
+.text1 p{
+    font-size: 33px;
+   
+}
+.textcontain{
+    display: flex;flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.linkedbtn{
+    background-color: #ffffffa7;
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    display: flex;justify-content: center;align-items: center;
+    color: #715210;
+}

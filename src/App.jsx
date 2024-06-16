@@ -12,6 +12,9 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { auth } from './firebase';
 import winnerdash from "./pages/winnerdash"
 
+
+
+
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(true); // State variable to track authentication state
 
@@ -41,6 +44,7 @@ const App = () => {
         <Route path="/signup" element={<Signup  />  } />
    
       </Routes>
+    
     </div>
     </Router>
   )
