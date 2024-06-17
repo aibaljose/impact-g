@@ -1,6 +1,6 @@
 .dashcard{
    
-    width: 320px;
+    width: 340px;
     /* background-color: #b1b2b3; */
     background:#4FD1C5;
     background-size: cover;
@@ -38,4 +38,14 @@
     color: white;
     display: flex;justify-content: center;align-items: center;
     text-align: center;
+}
+.tooltip{
+
+    background-color: rgba(9, 141, 117, 0);
+    height: 60px;
+    border-radius: 10px;
+    display: flex;justify-content: center;align-items: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border: 1px solid rgb(9, 141, 117);
 }

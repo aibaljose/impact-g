@@ -44,6 +44,9 @@ const dashboard = () => {
 
     return (
         <div className="dashboardusr">
+            <div className="tooltip">
+            ✅ - Verified by Admin | 🚩- Need Review | 🆗-Verified By Mentor
+            </div>
             <ul className='dashboardusr' >
                 {Object.keys(usersData).map((userId) => {
                     const user = usersData[userId];
@@ -68,6 +71,8 @@ const dashboard = () => {
                 })}
             </ul>
 
+            
+           
         </div>
     );
 };

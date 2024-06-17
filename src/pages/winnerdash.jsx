@@ -11,7 +11,7 @@ const winnerdash = () => {
          <Winner rank ="3th" name="Deepthi C D" score="4000"/>
       <Winner rank ="4th" name="Justin Saji " score="500"/>
       <Winner rank ="5th" name="Melbin Sabu" score="100"/> */}
-      <Rankcard rank ="1st" name="Aleena Joseph" score="5000" image ="https://media.licdn.com/dms/image/D5603AQH8NbO04QICFA/profile-displayphoto-shrink_100_100/0/1714195552129?e=1724284800&v=beta&t=8ysBeOO41Slq0pPj6sHwDLOlStcyPDoeR9NnJ7oucdU" pos="Team member" />
+      <Rankcard rank ="1st" name="Aleena Joseph" score="6000" image ="https://media.licdn.com/dms/image/D5603AQH8NbO04QICFA/profile-displayphoto-shrink_100_100/0/1714195552129?e=1724284800&v=beta&t=8ysBeOO41Slq0pPj6sHwDLOlStcyPDoeR9NnJ7oucdU" pos="Team member" />
       <Rankcard rank ="2nd" name="Alen Kuriakose" score="5000" image ="https://media.licdn.com/dms/image/D4D03AQETt-C5YW0C5w/profile-displayphoto-shrink_100_100/0/1692976095541?e=1724284800&v=beta&t=U7ganyYk0GE6RysX6_ACbGCsbcc7fXit7Gr1lv60Qrc" pos="Team member" />
       <Rankcard rank ="3nd" name="Mariya George" score="4000" image ="https://media.licdn.com/dms/image/D5603AQFM0jte9Hh8AQ/profile-displayphoto-shrink_100_100/0/1715512997096?e=1724284800&v=beta&t=0GNB8fDdA_mHzdqlc1nKQPSD3KEF8A33Abni9yfgS98" pos="Team member" />
       <Rankcard rank ="4th" name="Deepthi C D" score="4000" image ="https://media.licdn.com/dms/image/D4D03AQGQ5kC6W20amA/profile-displayphoto-shrink_100_100/0/1718542738634?e=1724284800&v=beta&t=3Af8TIvQBjKNsKf37Qhk8JCqXLSdCGY9DNsR75p9I7I" pos="Team member" />
