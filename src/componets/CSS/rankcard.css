@@ -1,5 +1,17 @@
 
+.rankcard:nth-child(1){
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    color: #ffffff;
+}
+.rankcard:nth-child(2){
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
 
+    color: #ffffff;
+}
+.rankcard:n{
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    color: #ffffff;
+}
 .rankcard{
     height: 200px;
     width: 380px;

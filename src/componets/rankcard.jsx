@@ -1,8 +1,9 @@
 
 import "./CSS/rankcard.css"
-const rankcard = ({rank,name,score,image,pos}) => {
+const rankcard = ({rank,name,score,image,pos,level}) => {
     return (
         <div className="rankcard">
+            
             <div className="profileicon">
                 <div className="roundtag">
                     <img src={image} alt="" />
@@ -28,7 +29,8 @@ const rankcard = ({rank,name,score,image,pos}) => {
 
                 <div className="linkedbtn">
                     View Profile
-                </div>
+                   
+                </div> {level}
             </div>
 
         </div>
