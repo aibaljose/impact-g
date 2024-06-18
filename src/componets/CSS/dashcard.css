@@ -1,8 +1,11 @@
 .dashcard{
-   
+    background-color: #fff;
+    color: #000000;
+    box-shadow:  0 20px 25px -5px #00c9a72b, 0 8px 10px -6px #00c9a72b;;
+    border: 1px solid #e5e7eb;
     width: 340px;
     /* background-color: #b1b2b3; */
-    background:#4FD1C5;
+    /* background:#4FD1C5; */
     background-size: cover;
     border-radius: 0 0 15px 15px;
     padding: 20px;
@@ -10,26 +13,35 @@
     gap: 10px;
 
 }
+
 .dashcard li{
+   
+    font-size: 12px;
     margin-top: 10px;
     padding: 10px;
-    color: rgb(255, 255, 255);
-    background-color: #ffffff00;
-    border-radius: 25px;
+    color: rgb(26, 25, 25);
+    background-color: #d7efe44e;
+    border-radius: 12px;
 }
 .dashcard li:last-child{
     background-color: #70d3ce;
     color: rgb(255, 255, 255);
 }
 .dashboardusr{
-    
+
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: #ffffff;
+    /* background-color: #120303; */
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    width: 80%;
+}
+.dashboardusr1{
+    margin-top: 150px;
+    display: flex;justify-content: center;align-items: center;
+    flex-direction: column;
 }
 .headname{
     background-color: #219C90;
@@ -40,7 +52,7 @@
     text-align: center;
 }
 .tooltip{
-
+max-width: 80%;
     background-color: rgba(9, 141, 117, 0);
     height: 60px;
     border-radius: 10px;

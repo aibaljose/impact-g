@@ -43,7 +43,7 @@ const dashboard = () => {
   }
 
     return (
-        <div className="dashboardusr">
+        <div className="dashboardusr1">
             <div className="tooltip">
             ✅ - Verified by Admin | 🚩- Need Review | 🆗-Verified By Mentor
             </div>

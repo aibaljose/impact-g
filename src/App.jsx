@@ -11,6 +11,7 @@ import Jschallenge from "./pages/jschallenge"
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { auth } from './firebase';
 import winnerdash from "./pages/winnerdash"
+import Home from "./pages/home"
 
 
 
@@ -34,7 +35,8 @@ const App = () => {
     <div className="app">
       <Navabar loggedIn={loggedIn} />
       <Routes >
-        <Route path="/" exact Component={Task} />
+      <Route path="/" exact Component={Home} />
+        <Route path="/challenges"  Component={Task} />
         <Route path="/git" Component={Gitabout} />
         <Route path="/data" Component={Page} />
         <Route path="/login" Component={Login} />

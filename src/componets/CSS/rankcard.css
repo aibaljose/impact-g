@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #eef2ff;
+}
 .rankcard:nth-child(1){
-    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
     color: #ffffff;
+    
 }
 .rankcard:nth-child(2){
     background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
@@ -14,25 +20,37 @@
 }
 .rankcard{
     height: 200px;
-    width: 380px;
+    width: 390px;
      border-radius: 12px;
+     background-color: #fff;
+     color: #000000;
+     box-shadow:  0 20px 25px -5px #00c9a72b, 0 8px 10px -6px #00c9a72b;;
+     border: 1px solid #e5e7eb;
+
      /* background-color: #2d2d2c; */
-     background: linear-gradient(45deg, #fbf3de, #ffdd87);
+     /* background: linear-gradient(45deg, #fbf3de, #ffdd87); */
      /* background: linear-gradient(25deg,#d64c7f,#ee4758 50%); */
 
     color: #715210;
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
+    padding: 14px;
     align-items: center;
     margin-bottom: 20px;
+    transition: transform .5s;
 }
-.roundtag{
-    height: 104px;
-    width: 104px;
 
-    border: 2px solid rgb(18, 106, 154);
+.rankcard:hover {
+    
+    border: 2px solid rgb(137, 182, 223);
+  }
+.roundtag{
+    height: 84px;
+    width: 84px;
+    display: flex;justify-content: center;align-items: center;
+
+    border: 2px solid rgb(63, 104, 175);
     border-radius: 50px;
 }
 .profileicon{
@@ -43,12 +61,17 @@
 }
 .profileicon img{
 border-radius: 50px;
-height: 100px;
-width: 100px;
+height: 80px;
+width: 80px;
 }
 .profileicon h3{
- font-size: 22px;
+ font-size: 16px;
+ font-weight: 400;
 }
+.profileicon p{
+    font-size: 12px;
+    font-weight: 400;
+   }
 .testcover{
     width: 200px;
     display: flex;
