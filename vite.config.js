@@ -12,12 +12,12 @@ export default defineConfig({
       theme_color: '#ffffff',
       icons: [
         {
-          src: './public/impact.png',
+          src: '/impact.png',
           sizes: '192x192',
           type: 'image/png'
         },
         {
-          src: './public/impact.png',
+          src: '/impact.png',
           sizes: '512x512',
           type: 'image/png'
         }
