@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap");
 .nav {
   font-family: "Outfit", sans-serif;
   background-color: #ffffff;
@@ -13,25 +13,24 @@
   top: 0;
   bottom: 0;
   z-index: 2;
-width: 100%;
-
+  width: 100%;
 
   margin-bottom: 128px;
   /* width: 100%; */
 }
 
-.logo{
-    font-family: "Bebas Neue", sans-serif;
-    color: #0284FE;
-    letter-spacing: .6rem;
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  color: #0284fe;
+  letter-spacing: 0.6rem;
 }
 .nav img {
   width: 150px;
 }
-.menu{
-    display: flex;
-    gap: 30px;
-    align-items: center;
+.menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 .menu-list {
   display: flex;
@@ -41,29 +40,36 @@ width: 100%;
   color: #505256;
   cursor: pointer;
 }
-.menu-list li{
-    margin-left: 2rem;
+.menu-list li {
+  margin-left: 2rem;
 }
-.menu-list li:hover{
-    color: #000000ba;
+.menu-list li:hover {
+  color: #000000ba;
 }
-.btn{
-    background-color: #0284fed4;
-    padding: 10px 20px;
-    border-radius: 50px;
-    color: #ffffff;
-    cursor: pointer;
+.btn {
+  background-color: #0284fed4;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
 }
-.btn:hover{
-    background-color: #0284fe;
-    color: rgb(255, 255, 255);
-    border: none;
+.btn:hover {
+  background-color: #0284fe;
+  color: rgb(255, 255, 255);
+  border: none;
 }
-.btn-sen{
-    color: black;
-    background-color: #fff;
-    border: 1px solid rgb(54, 54, 54);
-   
+.btn-sen {
+  color: black;
+  background-color: #fff;
+  border: 1px solid rgb(54, 54, 54);
+}
+.btnres{
+width: 80px;
+height: 40px;
+color: #fff;
+display: flex;justify-content: center;align-items: center;
+background-color: #0284fe;
+border-radius: 20px;
 }
 /* .btn:nth-child(2){
     border: 1px solid rgb(98, 98, 98);
@@ -75,31 +81,59 @@ width: 100%;
     background-color: 0284fe;
     color: #000000;
 } */
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
-.btn-pro{
-    background-color: #0284fed4;
-    background: url("https://aibaljose.github.io/CreSuit/img/play_store_512.png");
-    background-size: cover;
-    background-position: center center;
-    padding: 20px 20px;
-    border-radius: 50px;
-    color: #ffffff;
-    cursor: pointer;
+.btn-pro {
+  background-color: #0284fed4;
+  background: url("https://aibaljose.github.io/CreSuit/img/play_store_512.png");
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 20px;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
 }
-.humbar{
-    display: none;
-}
-
-@media only screen and (min-width:100px) and (max-width: 800px) {
-
-    .menu { 
-       display: none;
-    }
-    .humbar{
-        display: block;
-    }
+.humbar {
+  display: none;
  
- }
+}
+.humbar img {
+  size: 20px;
+  height: 40px;
+  width: 40px;
+ 
+}
+.sidemenu {
+  background-color: #0284fed4;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  bottom: 10px;
+  height: 80px;
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  transition: background-color 0.5s ease;
+  width: 90%;
+  right: 20px;
+  left: 20px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .humbar {
+    display: flex;
+    gap: 10px;
+  }
+  .nav {
+    padding: 20px;
+  }
+ 
+}
