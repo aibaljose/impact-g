@@ -116,8 +116,11 @@ li{
   align-items: center;
  flex-wrap: wrap;
  gap: 20px;
+ 
 }
 .challege1 {
+  box-shadow:  0 20px 25px -5px #1469cb2b, 0 8px 10px -6px #00c9a72b;;
+  background-color: #fff;
   border-radius: 10px;
   border: 1px solid rgba(21, 107, 182, 0.333);
   width: 800px;
@@ -126,12 +129,12 @@ li{
   /* align-items: center; */
   gap: 20px;
   flex-direction: column;
-  padding: 30px;
+  padding: 40px;
 }
 .challege1 h1{
   font-size: 30px;
   font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
    color: #1f1f1f;
 }
 h1.header1{
@@ -151,16 +154,22 @@ h1.header1{
   padding-left:10px ;
 
 }
+.inp:hover{
+  border: 2px solid rgb(137, 182, 223);
+}
 .btn{
   display: flex;justify-content: center;align-items: center;width: 160px;
   
 }
 .input_area{
+  border-radius: 10px;
   display: flex;
   /* justify-content: center; */
   gap: 10px;
   /* flex-direction: column; */
   align-items: center;
+  border: 2px solid rgb(137, 182, 223);
+padding: 30px;
 }
 .btn-tick{
   background-color: #1dbe63;
@@ -195,4 +204,7 @@ h1.header1{
   list-style-type: disc;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+.challege1 li{
+  padding: 10px;
 }

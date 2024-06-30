@@ -28,8 +28,10 @@ const task_list = () => {
 <Task name="javascript" no ="Advanced JS" dis="Challenge 2"/>
 </Link>
 
-
+<Link to="/python" >
 <Task name="Python" no ="learn.py" dis="Challenge 3"/>
+</Link>
+
 <Task name="soon" no ="0" dis="Challenge 4"/>
 <Task name="soon" no ="0" dis="Challenge 5"/>
 <Task name="soon" no ="0" dis="Challenge 6"/>

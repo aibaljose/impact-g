@@ -12,6 +12,7 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { auth } from './firebase';
 import winnerdash from "./pages/winnerdash"
 import Home from "./pages/home"
+import pythonchallenge from "./pages/pythonchallenge"
 
 
 
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/dashboard" Component={Dashboard} />
         <Route path="/winnerdash" Component={winnerdash} />
         <Route path="/js" Component={Jschallenge} />
+        <Route path="/python" Component={pythonchallenge} />
         <Route path="/signup" element={<Signup  />  } />
    
       </Routes>

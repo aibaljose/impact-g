@@ -60,7 +60,10 @@ const dashboard = () => {
                         ...user.data4,
                         ...user.data5,
                         ...user.data6,
-                        ...user.data7
+                        ...user.data7,
+                        ...user.data8,
+                        ...user.data9,
+                        ...user.Approved
                         
                     };
                     return (

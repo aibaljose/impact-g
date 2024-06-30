@@ -13,7 +13,8 @@ const dashcard = ({name,data}) => {
                         <p style={{fontSize:"6px",marginTop:"4px"}} >{value.split('::')[1].trim()}</p>
 
                     </li>
-                ))}</h3>
+                ))}
+                </h3>
             </div>
 <div className="dashcard">
 
@@ -28,6 +29,7 @@ const dashcard = ({name,data}) => {
                         {key}: {value}
                     </li>
                 ))}
+                <li style={{textAlign:"center"}}>✅ Approved By <span style={{textDecoration:"underline"}} title='Rini Kurian, Shamini James, Admin: Aibal jose' >Mentor</span>  <h4>Aibal Jose</h4> </li>
             </ul>
         </div>
         </div>

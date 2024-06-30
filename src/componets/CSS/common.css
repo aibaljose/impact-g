@@ -39,3 +39,26 @@ color: #0284FE;
 .text p{
     color: rgba(0, 0, 0, 0.682);
 }
+.listv li{
+    list-style-type: disc!important ;
+    list-style: disc !important;
+}
+.listvv li{
+    list-style: decimal !important;
+}
+.challege1 li{
+    font-size: 18px;
+}
+.challege1{
+    padding: 40px;
+}
+.loic{
+    display: flex;gap: 20px;padding: 30px;
+    background-color: #151515;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.loic img{
+    height: 100px;
+    width: 300px;
+}

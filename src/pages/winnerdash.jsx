@@ -9,7 +9,7 @@ const winnerdash = () => {
       {/* <Winner rank ="1st" name="Aleena Joseph" score="5000"  />
       <Winner rank ="2nd" name="Alen Kuriakose" score="5000"  />
       <Winner rank ="2nd" name="Mariya George " score="4000"/>
-         <Winner rank ="3th" name="Deepthi C D" score="4000"/>
+      <Winner rank ="3th" name="Deepthi C D" score="4000"/>
       <Winner rank ="4th" name="Justin Saji " score="500"/>
       <Winner rank ="5th" name="Melbin Sabu" score="100"/> */}
       <Rankcard rank ="1st" name="Aleena Joseph" score="7000" image ="https://media.licdn.com/dms/image/D5603AQH8NbO04QICFA/profile-displayphoto-shrink_100_100/0/1714195552129?e=1724284800&v=beta&t=8ysBeOO41Slq0pPj6sHwDLOlStcyPDoeR9NnJ7oucdU" pos="Team member" level="" />
