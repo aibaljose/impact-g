@@ -33,7 +33,7 @@ const pythonchallenge = () => {
         event.preventDefault();
         const user = auth.currentUser;
         const uid = user.uid;
-        const databasePath = `users/${uid}/data7`;
+        const databasePath = `users/${uid}/data8`;
         const databaseRef = ref(db, databasePath);
         set(databaseRef, { "python1": inputValue });
 
