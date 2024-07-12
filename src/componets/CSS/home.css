@@ -5,7 +5,7 @@
 
 
     background-repeat: no-repeat;
-    height: 100vh;
+    
     
 }
 .hero{
@@ -70,3 +70,59 @@
      }
  
  }
+ .events{
+    display:flex;
+    justify-content: center;align-items: center;width: 100%;flex-direction: column;
+   margin-top: 60px;
+    gap: 30px;
+
+ }
+ .eventtext{
+    width: 100%;
+    display: flex;justify-content: center;align-items: center;
+ }
+ .card1{
+    background-color: #0284fe1f;
+    /* height: 400px; */
+    width: 400px;
+    display: flex;
+    border-radius: 12px;flex-direction: column;
+    gap: 20px;
+ }
+ .cardcontainerev{
+    display: flex;gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;align-items: center;
+ }
+ .bgimg{
+    height: 300px;
+    width: 100%;
+     
+}
+.bgimg12{
+    background: url("https://appmaster.io/images/no-code-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.bgimg123{
+    background: url("https://mulearn.org/assets/gallery/permute/permute_54.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.tiltecon{
+    padding-left: 30px;
+}
+.btncontev{
+    display: flex;justify-content: center;align-items: center;margin-bottom: 20px;
+}
+.tiltecon p{
+    font-size: 12px;
+    width: 90%;
+    height: 160px;
+}
+.eventtext{
+    font-size: 30px;
+    font-weight: 600;
+}

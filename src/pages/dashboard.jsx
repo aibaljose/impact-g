@@ -7,7 +7,7 @@ import "../componets/CSS/dashcard.css"
 import Winner from "../componets/winner"
 
 
-const dashboard = () => {
+const dashboard = ({loggedIn}) => {
     const [usersData, setUsersData] = useState("");
     const [error, setError] = useState('');
     const fetchAllUsers = async () => {
@@ -22,9 +22,10 @@ const dashboard = () => {
             }
         } catch (error) {
             console.error('Error fetching data:', error);
-            setError("Please Login To access the data"); 
+            setError("<div className='loginmess'>Please Login</div>"); 
+            
 
-            return null;
+            // return null;
         }
     };
 
@@ -38,13 +39,17 @@ const dashboard = () => {
 
 
 
-  if (error) {
-    return <div style={{ color: 'red' }}>{error}</div>;
-  }
+
 
     return (
+
+
+
         <div className="dashboardusr1">
-            <div className="tooltip">
+
+{loggedIn && (
+<>
+<div className="tooltip">
             ✅ - Verified by Admin | 🚩- Need Review | 🆗-Verified By Mentor
             </div>
             <ul className='dashboardusr' >
@@ -75,7 +80,12 @@ const dashboard = () => {
                     );
                 })}
             </ul>
+</>
 
+)}
+
+            
+{loggedIn || (<div className='loginmess'>Please Login</div>)}
             
            
         </div>

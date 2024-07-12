@@ -62,3 +62,11 @@ color: #0284FE;
     height: 100px;
     width: 300px;
 }
+.loginmess{
+    background-color: #fff;
+    
+    height: 80px;
+    width: 200px;
+    display: flex;justify-content: center;align-items: center;
+    border-radius: 12px;
+}

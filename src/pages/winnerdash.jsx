@@ -5,6 +5,7 @@ import Multicard from "../componets/multicard"
 
 const winnerdash = () => {
   return (
+    
     <div style={{ display:"flex",flexWrap:"wrap",justifyContent:"center",gap:"10px",marginTop:"150px" }} >
       {/* <Winner rank ="1st" name="Aleena Joseph" score="5000"  />
       <Winner rank ="2nd" name="Alen Kuriakose" score="5000"  />

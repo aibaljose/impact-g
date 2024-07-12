@@ -10,7 +10,7 @@ import Login from './componets/login';
 import Jschallenge from "./pages/jschallenge"
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { auth } from './firebase';
-import winnerdash from "./pages/winnerdash"
+import Winnerdash from "./pages/winnerdash"
 import Home from "./pages/home"
 import pythonchallenge from "./pages/pythonchallenge"
 
@@ -37,12 +37,12 @@ const App = () => {
       <Navabar loggedIn={loggedIn} />
       <Routes >
       <Route path="/" exact Component={Home} />
-        <Route path="/challenges"  Component={Task} />
+        <Route path="/challenges"  element={<Task loggedIn={loggedIn}/>} />
         <Route path="/git" Component={Gitabout} />
         <Route path="/data" Component={Page} />
         <Route path="/login" Component={Login} />
-        <Route path="/dashboard" Component={Dashboard} />
-        <Route path="/winnerdash" Component={winnerdash} />
+        <Route path="/dashboard" element={<Dashboard loggedIn={loggedIn}/>}  />
+        <Route path="/winnerdash" element={<Winnerdash loggedIn={loggedIn}/>} />
         <Route path="/js" Component={Jschallenge} />
         <Route path="/python" Component={pythonchallenge} />
         <Route path="/signup" element={<Signup  />  } />
