@@ -1,0 +1,29 @@
+.stylecard{
+    display: flex;justify-content: center;align-items: center;min-height: 100vh; gap: 30px;
+}
+.stylecard_card{
+    
+    width: 280px;
+    height: 314px;
+    border-radius: 15px;
+    background-color: #fff;
+    
+    box-shadow: inset 0 4px 7px 1px #ffffff, inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 2px 6px rgba(0, 21, 64, 0.14), 0 10px 20px rgba(0, 21, 64, 0.05);
+}
+.imgcard{
+   
+    height: 240px;
+    border-radius: 15px 15px 0 0;
+}
+.card_1{
+    background-image: url("https://images.unsplash.com/photo-1665289420974-1168352d4848?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card_2{
+    background-image: url("https://images.unsplash.com/photo-1642615835477-d303d7dc9ee9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

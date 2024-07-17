@@ -12,6 +12,7 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { auth } from './firebase';
 import Winnerdash from "./pages/winnerdash"
 import Home from "./pages/home"
+import Stylecard from "./pages/stylecard"
 import pythonchallenge from "./pages/pythonchallenge"
 
 
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/git" Component={Gitabout} />
         <Route path="/data" Component={Page} />
         <Route path="/login" Component={Login} />
+        <Route path="/stylecard" Component={Stylecard} />
         <Route path="/dashboard" element={<Dashboard loggedIn={loggedIn}/>}  />
         <Route path="/winnerdash" element={<Winnerdash loggedIn={loggedIn}/>} />
         <Route path="/js" Component={Jschallenge} />
