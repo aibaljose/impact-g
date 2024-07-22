@@ -24,7 +24,7 @@ const winnerdash = () => {
       <Rankcard rank ="9th" name="Melbin Sabu" score="4000" image ="https://media.licdn.com/dms/image/D4D03AQFg_Ssdb_-sVw/profile-displayphoto-shrink_100_100/0/1718708136548?e=1724284800&v=beta&t=YiX77sHtJllWNYRmz96cEmMk6VSnsyVimYtOyaiWLqU" pos="Team member" />
       
       
-      <Rankcard rank ="-th" name="Solaman M J" score="0" image ="https://bluesignal.com/wp-content/uploads/2017/07/user_profile_demo-768x768.png" pos="Team member" />
+      <Rankcard rank ="10th" name="Solaman M J" score="4000" image ="https://bluesignal.com/wp-content/uploads/2017/07/user_profile_demo-768x768.png" pos="Team member" />
 <Multicard>
 
 </Multicard>
