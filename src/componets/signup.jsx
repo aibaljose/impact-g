@@ -40,7 +40,7 @@ const Signup = () => {
 <form className="form" onSubmit={handleSubmit}>
   <p className="form-title">Sign in to your account</p>
   <div className="input-container">
-    <input placeholder="Enter Name" type="text" value={namev}
+    <input placeholder="Enter Team Name" type="text" value={namev}
          onChange={(e) => setNamev(e.target.value)} />
     <span>
       <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@ const Signup = () => {
   </div>
 
   <div className="input-container">
-    <input placeholder="Enter email" type="email" value={email}
+    <input placeholder="Enter lead email" type="email" value={email}
          onChange={(e) => setEmail(e.target.value)} />
     <span>
       <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
