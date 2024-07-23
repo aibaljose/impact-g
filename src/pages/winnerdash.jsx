@@ -13,6 +13,17 @@ const winnerdash = () => {
       <Winner rank ="3th" name="Deepthi C D" score="4000"/>
       <Winner rank ="4th" name="Justin Saji " score="500"/>
       <Winner rank ="5th" name="Melbin Sabu" score="100"/> */}
+      <Rankcard rank ="-" name="TEAM SEVEN" score="0" image ="https://img.freepik.com/free-vector/team-profile-card-with-character-icon-illustration_138676-228.jpg?size=626&ext=jpg" pos="Team" />
+      <Rankcard rank ="-" name="Binary" score="0" image ="https://img.freepik.com/free-vector/team-profile-card-with-character-icon-illustration_138676-228.jpg?size=626&ext=jpg" pos="Team" />
+      <Rankcard rank ="-" name="TEAM TWO" score="0" image ="https://img.freepik.com/free-vector/team-profile-card-with-character-icon-illustration_138676-228.jpg?size=626&ext=jpg" pos="Team" />
+
+      <Rankcard rank ="-" name="TEAM ONE" score="0" image ="https://img.freepik.com/free-vector/team-profile-card-with-character-icon-illustration_138676-228.jpg?size=626&ext=jpg" pos="Team" />
+
+      <Rankcard rank ="-" name="Syntax Squad" score="0" image ="https://img.freepik.com/free-vector/team-profile-card-with-character-icon-illustration_138676-228.jpg?size=626&ext=jpg" pos="Team" />
+      <Rankcard rank ="-" name="TEAM FIVE" score="0" image ="https://img.freepik.com/free-vector/team-profile-card-with-character-icon-illustration_138676-228.jpg?size=626&ext=jpg" pos="Team" />
+      <Rankcard rank ="-" name="TEAM SIX" score="0" image ="https://img.freepik.com/free-vector/team-profile-card-with-character-icon-illustration_138676-228.jpg?size=626&ext=jpg" pos="Team" />
+
+
       <Rankcard rank ="1st" name="Alen Kuriakose" score="8000" image ="https://media.licdn.com/dms/image/D4D03AQETt-C5YW0C5w/profile-displayphoto-shrink_100_100/0/1692976095541?e=1724284800&v=beta&t=U7ganyYk0GE6RysX6_ACbGCsbcc7fXit7Gr1lv60Qrc" pos="Team member" />
       <Rankcard rank ="2nd" name="Mariya George" score="8000" image ="https://media.licdn.com/dms/image/D5603AQFM0jte9Hh8AQ/profile-displayphoto-shrink_100_100/0/1715512997096?e=1724284800&v=beta&t=0GNB8fDdA_mHzdqlc1nKQPSD3KEF8A33Abni9yfgS98" pos="Team member" />
       <Rankcard rank ="3rd" name="Aleena Joseph" score="8000" image ="https://media.licdn.com/dms/image/D5603AQH8NbO04QICFA/profile-displayphoto-shrink_100_100/0/1714195552129?e=1724284800&v=beta&t=8ysBeOO41Slq0pPj6sHwDLOlStcyPDoeR9NnJ7oucdU" pos="Team member" level="" />
