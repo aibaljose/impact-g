@@ -7,7 +7,7 @@ const jschallenge = () => {
   const [inputValue, setInputValue] = useState('');
   const [inputValue1, setInputValue1] = useState('');
   const [tick, settick] = useState(false);
-
+ 
   useEffect(() => {
     let timer;
     if (tick) {

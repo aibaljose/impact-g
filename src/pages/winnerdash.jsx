@@ -14,13 +14,13 @@ const winnerdash = () => {
       <Winner rank ="4th" name="Justin Saji " score="500"/>
       <Winner rank ="5th" name="Melbin Sabu" score="100"/> */}
       <Rankcard rank ="1st" name="TEAM 5" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
+      <Rankcard rank ="2nd" name="TEAM 1" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
+      <Rankcard rank ="3rd" name="Syntax Squad" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
+      <Rankcard rank ="4th" name="TEAM TWO" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="-" name="TEAM SEVEN" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="-" name="Binary" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
-      <Rankcard rank ="-" name="TEAM TWO" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
 
-      <Rankcard rank ="-" name="TEAM ONE" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
 
-      <Rankcard rank ="-" name="Syntax Squad" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="-" name="TEAM SIX" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
 
 
