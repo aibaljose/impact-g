@@ -77,7 +77,7 @@ const winnerdash = () => {
       <Rankcard rank ="9th" name="Melbin Sabu" score="4000" image ="https://media.licdn.com/dms/image/D4D03AQFg_Ssdb_-sVw/profile-displayphoto-shrink_100_100/0/1718708136548?e=1724284800&v=beta&t=YiX77sHtJllWNYRmz96cEmMk6VSnsyVimYtOyaiWLqU" pos="Team member" />
       
       
-      <Rankcard rank ="10th" name="Solaman M J" score="4000" image ="https://bluesignal.com/wp-content/uploads/2017/07/user_profile_demo-768x768.png" pos="Team member" />
+      <Rankcard rank ="10th" name="Solaman M J" score="4000" image ="https://media.licdn.com/dms/image/D4E03AQFj_8wi6U-RPg/profile-displayphoto-shrink_100_100/0/1721837420922?e=1727308800&v=beta&t=e6eYXwdp6Ptv84JkZr-pWe11SG07JOCAvavB1Jn_7TE" pos="Team member" />
       {Object.entries(scoreboardData).map(([key, value]) => (
    
    <Rankcard key={key} rank ={value.rank} name={value.name}score={value.score} image ={value.linkedin} pos="Team" />
