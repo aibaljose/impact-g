@@ -74,7 +74,7 @@ const Signup = () => {
           </span>
         </div>
         <div className="input-container">
-          <input placeholder="Linkedin profile (url)" type="text" value={linkedin}
+          <input placeholder="Linkedin profile image (url)" title='right click on image and copy image address' type="text" value={linkedin}
             onChange={(e) => setlinkedin(e.target.value)} required />
           <span>
             <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

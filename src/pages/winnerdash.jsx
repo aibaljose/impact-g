@@ -2,8 +2,37 @@
 import Winner from "../componets/winner"
 import Rankcard from "../componets/rankcard"
 import Multicard from "../componets/multicard"
+import React, { useState, useEffect } from 'react';
 
+import { db, auth } from '../firebase';
+import { ref, set, push, update,get } from 'firebase/database';
 const winnerdash = () => {
+  const [scoreboardData, setScoreboardData] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const fetchScoreboardData = async () => {
+      try {
+        const scoreboardRef = ref(db, 'scoreboard'); // Adjust the path to match your database structure
+        const snapshot = await get(scoreboardRef);
+        if (snapshot.exists()) {
+          setScoreboardData(snapshot.val());
+        } else {
+          console.log('No data available');
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setError('Error fetching data');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchScoreboardData();
+  }, []);
+
+
   return (
     
     <div style={{ display:"flex",flexWrap:"wrap",justifyContent:"center",gap:"10px",marginTop:"150px" }} >
@@ -13,6 +42,23 @@ const winnerdash = () => {
       <Winner rank ="3th" name="Deepthi C D" score="4000"/>
       <Winner rank ="4th" name="Justin Saji " score="500"/>
       <Winner rank ="5th" name="Melbin Sabu" score="100"/> */}
+
+
+
+{Object.entries(scoreboardData).map(([key, value]) => (
+   
+      <Rankcard key={key} rank ={value.rank} name={value.name}score={value.score} image ={value.linkedin} pos="Team" />
+    
+    ))}
+
+
+
+
+
+
+
+
+
       <Rankcard rank ="1st" name="TEAM 5" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="2nd" name="TEAM 1" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="3rd" name="Syntax Squad" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
