@@ -47,7 +47,7 @@ const App = () => {
         <Route path="/winnerdash" element={<Winnerdash loggedIn={loggedIn}/>} />
         <Route path="/js" Component={Jschallenge} />
         <Route path="/python" Component={pythonchallenge} />
-        <Route path="/signup" element={<Signup  />  } />
+        <Route path="/signup" Component={Signup}   />
    
       </Routes>
     

@@ -60,7 +60,7 @@ const home = () => {
 
                         </div>
                         <div className="tiltecon">
-                            <h4>Mulean Introduction webinar <br/></h4>
+                            <h4>Mulearn Introduction webinar <br/></h4>
                             <p>
                             µLearn is a synergic philosophy of education, with a culture of mutual learning through micro peer groups. We are here to assist you in breaking through the echo chambers and free you from the shackles you have grounded yourself in.
                             <br />  <br /> Date: Coming soon<br /><br /> Time: soon PM IST</p>
