@@ -45,11 +45,6 @@ const winnerdash = () => {
 
 
 
-{Object.entries(scoreboardData).map(([key, value]) => (
-   
-      <Rankcard key={key} rank ={value.rank} name={value.name}score={value.score} image ={value.linkedin} pos="Team" />
-    
-    ))}
 
 
 
@@ -59,7 +54,8 @@ const winnerdash = () => {
 
 
 
-      <Rankcard rank ="1st" name="TEAM 5" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
+
+      {/* <Rankcard rank ="1st" name="TEAM 5" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="2nd" name="TEAM 1" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="3rd" name="Syntax Squad" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
       <Rankcard rank ="4th" name="TEAM TWO" score="200" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
@@ -67,7 +63,7 @@ const winnerdash = () => {
       <Rankcard rank ="-" name="Binary" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
 
 
-      <Rankcard rank ="-" name="TEAM SIX" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" />
+      <Rankcard rank ="-" name="TEAM SIX" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" /> */}
 
 
       <Rankcard rank ="1st" name="Alen Kuriakose" score="8000" image ="https://media.licdn.com/dms/image/D4D03AQETt-C5YW0C5w/profile-displayphoto-shrink_100_100/0/1692976095541?e=1724284800&v=beta&t=U7ganyYk0GE6RysX6_ACbGCsbcc7fXit7Gr1lv60Qrc" pos="Team member" />
@@ -82,6 +78,11 @@ const winnerdash = () => {
       
       
       <Rankcard rank ="10th" name="Solaman M J" score="4000" image ="https://bluesignal.com/wp-content/uploads/2017/07/user_profile_demo-768x768.png" pos="Team member" />
+      {Object.entries(scoreboardData).map(([key, value]) => (
+   
+   <Rankcard key={key} rank ={value.rank} name={value.name}score={value.score} image ={value.linkedin} pos="Team" />
+ 
+ ))}
 <Multicard>
 
 </Multicard>
