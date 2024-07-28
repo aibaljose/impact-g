@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { signup, logout } from '../auth';
 import "./CSS/signup.css"
+import { useNavigate } from 'react-router-dom';
 import { db, auth } from '../firebase'; // Import the Firebase database module
 import { ref, set } from 'firebase/database';
 const Signup = () => {
@@ -19,6 +20,7 @@ const Signup = () => {
   const [linkedin, setlinkedin] = useState('');
   const [password, setPassword] = useState('');
   const [namev, setNamev] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,27 +35,28 @@ const Signup = () => {
 
 
 
-    set(databaseRef, {
+    await set(databaseRef, {
 
       name: namev + ":: " + email,
 
 
     });
-    set(databaseRef2, {
+    await set(databaseRef2, {
 
       name: namev,
       email: email,
-      linkedin:linkedin,
+      linkedin: linkedin,
       score: 0,
       rank: 0,
 
     });
+    navigate('/');
   };
 
   return (
     <div className="contain">
       <form className="form" onSubmit={handleSubmit}>
-        <p className="form-title">Sign in to your account</p>
+        <p className="form-title">Sign up your account</p>
         <div className="input-container">
           <input placeholder="Enter Name" type="text" value={namev}
             onChange={(e) => setNamev(e.target.value)} required />
