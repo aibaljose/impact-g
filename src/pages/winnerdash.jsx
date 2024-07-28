@@ -66,11 +66,11 @@ const winnerdash = () => {
       <Rankcard rank ="-" name="TEAM SIX" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" /> */}
 
 {Object.entries(scoreboardData)
-  .sort(([, a], [, b]) => a.rank - b.rank)
-  .map(([key, value]) => (
+  .sort(([, a], [, b]) => b.score - a.score) // Sort by score in descending order
+  .map(([key, value], index) => (
     <Rankcard
       key={key}
-      rank={value.rank}
+      rank={index + 1} // Assign rank based on the sorted order
       name={value.name}
       score={value.score}
       image={value.linkedin}
