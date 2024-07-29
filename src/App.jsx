@@ -14,9 +14,7 @@ import Winnerdash from "./pages/winnerdash"
 import Home from "./pages/home"
 import Stylecard from "./pages/stylecard"
 import pythonchallenge from "./pages/pythonchallenge"
-
-
-
+import Rdbms from "./pages/rdbms"
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(true); // State variable to track authentication state
@@ -48,6 +46,7 @@ const App = () => {
         <Route path="/js" Component={Jschallenge} />
         <Route path="/python" Component={pythonchallenge} />
         <Route path="/signup" Component={Signup}   />
+        <Route path="/rdbms" Component={Rdbms}   />
    
       </Routes>
     

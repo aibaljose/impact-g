@@ -22,7 +22,7 @@ const task_list = ({loggedIn}) => {
 <div className="text">
   
         <h2> {loggedIn} A game To learn Skills with <br></br>  challenges <span> powered by impact</span></h2>
-        <p>Welcome to SkillQuest, the ultimate game designed to help you learn and master new skills through engaging and impactful challenges.<br></br> Whether you're looking to enhance your coding abilities, develop your artistic talents, or improve your problem-solving techniques.</p>
+        {/* <p>Welcome to SkillQuest, the ultimate game designed to help you learn and master new skills through engaging and impactful challenges.<br></br> Whether you're looking to enhance your coding abilities, develop your artistic talents, or improve your problem-solving techniques.</p> */}
       </div>
 
       <div className="container">
@@ -37,10 +37,12 @@ const task_list = ({loggedIn}) => {
         <Link to="/python" >
           <Task name="Python" no="learn.py" dis="Challenge 3" />
         </Link>
-
-        <Task name="soon" no="0" dis="Challenge 4" />
-        <Task name="soon" no="0" dis="Challenge 5" />
-        <Task name="soon" no="0" dis="Challenge 6" />
+        <Link to="/rdbms" >
+        <Task name="RDBMS" no="SQL & DB" dis="Challenge 4" />
+        </Link>
+        
+        <Task name="Web Design" no="HTML & CSS" dis="Challenge 5" />
+        <Task name="Cyber Security" no="Ethical hacking" dis="Challenge 6" />
       </div>
 
 </>
