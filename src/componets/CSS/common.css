@@ -1,72 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-.container{
-    font-family: "Outfit", sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 80%;
-    
-    /* justify-content: center; */
-   justify-content: space-around;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.container {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 80%;
+
+  /* justify-content: center; */
+  justify-content: space-around;
 }
-.header{
-    margin-top: 150px;
+.header {
+  margin-top: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.text h2 {
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.833);
+}
+.text span {
+  color: #0284fe;
+}
+.text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.text p {
+  color: rgba(0, 0, 0, 0.682);
+}
+.listv li {
+  list-style-type: disc !important ;
+  list-style: disc !important;
+}
+.listvv li {
+  list-style: decimal !important;
+}
+.challege1 li {
+  font-size: 18px;
+}
+.challege1 {
+  padding: 40px;
+}
+.loic {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  background-color: #151515;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+.loic img {
+  height: 100px;
+  width: 300px;
+}
+.loginmess {
+  background-color: #fff;
+
+  height: 90px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.update-score-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f2f5;
+  }
   
+  .update-score-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .update-score-container ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-}
-.text h2{
-    font-family: "Outfit", sans-serif;
-    letter-spacing: .2rem;
-    font-size: 40px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.833);
-}
-.text span{
-color: #0284FE;
-}
-.text{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;align-items: center;
-    margin-left: 30px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.text p{
-    color: rgba(0, 0, 0, 0.682);
-}
-.listv li{
-    list-style-type: disc!important ;
-    list-style: disc !important;
-}
-.listvv li{
-    list-style: decimal !important;
-}
-.challege1 li{
-    font-size: 18px;
-}
-.challege1{
-    padding: 40px;
-}
-.loic{
-    display: flex;gap: 20px;padding: 30px;
-    background-color: #151515;
-    border-radius: 20px;
-    flex-wrap: wrap;
-}
-.loic img{
-    height: 100px;
-    width: 300px;
-}
-.loginmess{
+  }
+  
+  .update-score-container li {
     background-color: #fff;
-    
-    height: 80px;
+    min-width: 300px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .update-score-container li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .update-score-container input {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .update-score-container button {
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 40px;
+    background-color: #0f51a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .update-score-container button:hover {
+    background-color: #084287;
+  }
+  
+  .scoreup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+  }
+  
+  .scoreup span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  .key-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .key-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     width: 200px;
-    display: flex;justify-content: center;align-items: center;
-    border-radius: 12px;
-}
+  }
+  
+  .key-form button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #0f51a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .key-form button:hover {
+    background-color: #084287;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
