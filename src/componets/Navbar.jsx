@@ -13,7 +13,7 @@ const Navbar = ({ loggedIn }) => {
   const [showComponent, setShowComponent] = useState(false);
   const [userimag, setimg] = useState();
 
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState("https://aibaljose.github.io/CreSuit/img/play_store_512.png");
   const [loading, setLoading] = useState(true);
 
 // Initialize Firebase Auth
