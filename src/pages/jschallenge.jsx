@@ -6,8 +6,10 @@ const jschallenge = () => {
 
   const [inputValue, setInputValue] = useState('');
   const [inputValue1, setInputValue1] = useState('');
+  const [inputValue2, setInputValue2] = useState('');
+
   const [tick, settick] = useState(false);
- 
+
   useEffect(() => {
     let timer;
     if (tick) {
@@ -28,7 +30,9 @@ const jschallenge = () => {
   const handleChange1 = (event) => {
     setInputValue1(event.target.value);
   };
-
+  const handleChange2 = (event) => {
+    setInputValue2(event.target.value);
+  };
 
 
   const handleSubmit = (event) => {
@@ -50,6 +54,17 @@ const jschallenge = () => {
     const databasePath = `users/${uid}/data7`;
     const databaseRef = ref(db, databasePath);
     set(databaseRef, { "challege7": inputValue1 });
+
+    settick(true)
+
+  };
+  const handleSubmit2 = (event) => {
+    event.preventDefault();
+    const user = auth.currentUser;
+    const uid = user.uid;
+    const databasePath = `users/${uid}/data8`;
+    const databaseRef = ref(db, databasePath);
+    set(databaseRef, { "challege8": inputValue2 });
 
     settick(true)
 
@@ -79,15 +94,28 @@ const jschallenge = () => {
 
 
       <div className="challege1" >
-        <h1>AI Image Generation Website</h1>
-        <p>Build An AI Image Generation Website in HTML CSS and JavaScript | Like Midjourney and DALL-E & push it to the repository named "ai-image" <br></br> (Create the repository)</p>
-        <iframe width="" height="400" src="https://www.youtube.com/embed/fA_tWwPMapM?si=M7PpnB4wBPvy0QZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div className="input_area">
+        <h1>HTML CSS & JavaScript</h1>
+        <p>Detect Pressed Key in HTML CSS & JavaScript | Detect Key Presses in JavaScript& push it to the repository named "js-project" <br></br> (Create the repository)</p>
+        <iframe width="" height="400" src="https://www.youtube-nocookie.com/embed/YG7Tsu_ubzo?si=4LV0OztlZRO4NBJy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div className="input_area">
 
           <input type="text" className="inp" value={inputValue1} onChange={handleChange1} placeholder="Paste Here" />
 
 
           <div className="btn" onClick={handleSubmit1} >Submit</div>
+        </div>
+      </div>
+
+      <div className="challege1" >
+        <h1>HTML CSS & JavaScript</h1>
+        <p>Create A Todo List App in HTML CSS & JavaScript | Todo App in JavaScript
+          & push it to the repository named "js-project" <br></br> (Create the repository)</p>
+        <iframe width="" height="400" src="https://www.youtube-nocookie.com/embed/2QIMUBilooc?si=8dfuQZU2CNP53ql3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div className="input_area">
+
+          <input type="text" className="inp" value={inputValue2} onChange={handleChange2} placeholder="Paste Here" />
+
+
+          <div className="btn" onClick={handleSubmit2} >Submit</div>
         </div>
       </div>
 

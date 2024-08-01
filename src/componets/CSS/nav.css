@@ -86,13 +86,13 @@ a {
   text-decoration: none;
 }
 .btn-pro {
-  background-color: #0284fed4;
-  background: url("https://aibaljose.github.io/CreSuit/img/play_store_512.png");
+  /* background-color: #0284fed4; */
+  /* background: url("https://aibaljose.github.io/CreSuit/img/play_store_512.png"); */
   background-size: cover;
   background-position: center center;
   padding: 20px 20px;
   border-radius: 50px;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
 }
 .humbar {
