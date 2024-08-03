@@ -101,7 +101,7 @@ const Navbar = ({ loggedIn }) => {
           <li><Link to="/winnerdash" style={{ textDecoration: "none" }} >Dashboard</Link></li>
 
 
-          <li><Link to="/" style={{ textDecoration: "none" }} >Events</Link></li>
+          <li><Link to="/dashboard" style={{ textDecoration: "none" }} >Activity log</Link></li>
         </ul>
 
         {loggedIn || (
@@ -183,7 +183,7 @@ const Navbar = ({ loggedIn }) => {
         <li><Link to="/winnerdash" style={{ textDecoration: "none" }} >Dashboard</Link></li>
 
 
-        <li><Link to="/" style={{ textDecoration: "none" }} >Events</Link></li>
+        <li><Link to="/dashboard" style={{ textDecoration: "none" }} >Activity log</Link></li>
 
 
 

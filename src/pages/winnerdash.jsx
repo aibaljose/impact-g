@@ -66,6 +66,7 @@ const winnerdash = () => {
       <Rankcard rank ="-" name="TEAM SIX" score="0" image ="https://clipground.com/images/white-profile-icon-png-7.png" pos="Team" /> */}
 
 {Object.entries(scoreboardData)
+  .filter(([key, value]) => value.name !== 'Rini Kurian') // Exclude item with name 'aaaa'
   .sort(([, a], [, b]) => b.score - a.score) // Sort by score in descending order
   .map(([key, value], index) => (
     <Rankcard
@@ -77,7 +78,6 @@ const winnerdash = () => {
       pos="Student"
     />
   ))}
-
 
 
 
