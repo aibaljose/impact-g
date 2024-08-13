@@ -95,7 +95,7 @@ const jschallenge = () => {
 
       <div className="challege1" >
         <h1>HTML CSS & JavaScript</h1>
-        <p>Detect Pressed Key in HTML CSS & JavaScript | Detect Key Presses in JavaScript& push it to the repository named "js-project" <br></br> (Create the repository)</p>
+        <p>Detect Pressed Key in HTML CSS & JavaScript | Detect Key Presses in JavaScript& push it to the repository named "js-keypress-project" <br></br> (Create the repository)</p>
         <iframe width="" height="400" src="https://www.youtube-nocookie.com/embed/YG7Tsu_ubzo?si=4LV0OztlZRO4NBJy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div className="input_area">
 
           <input type="text" className="inp" value={inputValue1} onChange={handleChange1} placeholder="Paste Here" />
@@ -108,7 +108,7 @@ const jschallenge = () => {
       <div className="challege1" >
         <h1>HTML CSS & JavaScript</h1>
         <p>Create A Todo List App in HTML CSS & JavaScript | Todo App in JavaScript
-          & push it to the repository named "js-project" <br></br> (Create the repository)</p>
+          & push it to the repository named "js-todo-project" <br></br> (Create the repository)</p>
         <iframe width="" height="400" src="https://www.youtube-nocookie.com/embed/2QIMUBilooc?si=8dfuQZU2CNP53ql3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div className="input_area">
 
