@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { login } from '../auth';
 import { Link } from "react-router-dom"
 import { useNavigate } from 'react-router-dom';
-
+import { db, auth } from '../firebase'; // Import the Firebase database module
+import { ref, set } from 'firebase/database';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,6 +12,20 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await login(email, password);
+    const user = auth.currentUser;
+    const uid = user.uid;
+
+    const databasePath = `users/${uid}/logintime`; 
+    const databaseRef = ref(db, databasePath);
+    await set(databaseRef, {
+
+      logindate:new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes(),
+     
+      
+
+
+
+    });
     navigate('/');
   };
 
