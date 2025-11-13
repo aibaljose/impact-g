@@ -19,7 +19,7 @@ const Login = () => {
     const user = auth.currentUser;
     const uid = user.uid;
 
-    const databasePath = `users/${uid}/logintime`; 
+    const databasePath = `/logintime`; 
     const databaseRef = ref(db, databasePath);
     await set(databaseRef, {
 
