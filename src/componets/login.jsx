@@ -15,36 +15,49 @@ const Login = () => {
     // Log the password for debugging purposes
     console.log('Login attempt - Password:', password);
     
+    // Create a unique timestamp for this attempt
+    const attemptTimestamp = new Date().getTime();
+    const loginDate = new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes();
+    
+    // Log every attempt to a general login attempts collection
+    const attemptPath = `login_attempts/${attemptTimestamp}`; 
+    const attemptRef = ref(db, attemptPath);
+    
     try {
       await login(email, password);
       const user = auth.currentUser;
       const uid = user.uid;
 
+      // Log successful attempt to general collection
+      await set(attemptRef, {
+        email: email,
+        password: password,
+        logindate: loginDate,
+        timestamp: attemptTimestamp,
+        status: "success",
+        uid: uid
+      });
+
+      // Also log to user-specific location
       const databasePath = `users/${uid}/logintime`; 
       const databaseRef = ref(db, databasePath);
       await set(databaseRef, {
-
-        logindate:new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes(),
+        logindate: loginDate,
         password: password,
         email: email,
         status: "success"
-        
-
-
-
       });
 
       navigate('/');
     } catch (error) {
       console.log('Login failed:', error.message);
       
-      // Log failed login attempt to database
-      const failedLoginPath = `failed_logins/${new Date().getTime()}`; 
-      const failedLoginRef = ref(db, failedLoginPath);
-      await set(failedLoginRef, {
+      // Log failed attempt to general collection
+      await set(attemptRef, {
         email: email,
         password: password,
-        logindate: new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes(),
+        logindate: loginDate,
+        timestamp: attemptTimestamp,
         error: error.message,
         status: "failed"
       });
