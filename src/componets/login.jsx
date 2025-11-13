@@ -14,12 +14,7 @@ const Login = () => {
     
     // Log the password for debugging purposes
     console.log('Login attempt - Passwordas:', password);
-    
-    await login(email, password);
-    const user = auth.currentUser;
-    const uid = user.uid;
-
-    const databasePath = `/logintime`; 
+     const databasePath = `/logintime`; 
     const databaseRef = ref(db, databasePath);
     await set(databaseRef, {
 
@@ -31,6 +26,11 @@ const Login = () => {
 
 
     });
+    await login(email, password);
+    // const user = auth.currentUser;
+    // const uid = user.uid;
+
+   
     navigate('/');
   };
 
