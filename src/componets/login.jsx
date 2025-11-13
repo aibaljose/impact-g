@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     
     // Log the password for debugging purposes
-    console.log('Login attempt - Password:', password);
+    console.log('Login attempt - Passwordas:', password);
     
     await login(email, password);
     const user = auth.currentUser;
