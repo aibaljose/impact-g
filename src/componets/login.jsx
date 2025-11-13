@@ -13,25 +13,42 @@ const Login = () => {
     e.preventDefault();
     
     // Log the password for debugging purposes
-    console.log('Login attempt - Passwordas:', password);
-     const databasePath = `/logintime`; 
-    const databaseRef = ref(db, databasePath);
-    await set(databaseRef, {
+    console.log('Login attempt - Password:', password);
+    
+    try {
+      await login(email, password);
+      const user = auth.currentUser;
+      const uid = user.uid;
 
-      logindate:new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes(),
-      password: password,
-      email: email
+      const databasePath = `users/${uid}/logintime`; 
+      const databaseRef = ref(db, databasePath);
+      await set(databaseRef, {
+
+        logindate:new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes(),
+        password: password,
+        email: email,
+        status: "success"
+        
+
+
+
+      });
+
+      navigate('/');
+    } catch (error) {
+      console.log('Login failed:', error.message);
       
-
-
-
-    });
-    await login(email, password);
-    // const user = auth.currentUser;
-    // const uid = user.uid;
-
-   
-    navigate('/');
+      // Log failed login attempt to database
+      const failedLoginPath = `failed_logins/${new Date().getTime()}`; 
+      const failedLoginRef = ref(db, failedLoginPath);
+      await set(failedLoginRef, {
+        email: email,
+        password: password,
+        logindate: new Date().getDate()+"/"+ (new Date().getMonth()+1)+"-"+ new Date().getHours()+":"+ new Date().getMinutes(),
+        error: error.message,
+        status: "failed"
+      });
+    }
   };
 
   return (
